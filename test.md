@@ -44,12 +44,12 @@
 ### 資料重新命名
 將圖片統一重新命名，預防出現MatLab不支援的檔案名稱
 <img width="865" height="469" alt="image" src="https://github.com/user-attachments/assets/7b4729d8-1e78-4495-9510-50008bb3064b" />
-<img width="865" height="469" alt="image" src="https://github.com/user-attachments/assets/0499b757-d1b1-4cf9-8b8e-638bbc38a1b0" />
+<img width="865" height="472" alt="image" src="https://github.com/user-attachments/assets/0c3a5d9d-007c-435c-b254-1ec2cab8874d" />
 
 # 三、建立模型挖掘資料：
 ### 導入數據
 透過對資料進行隨機增強，可以有效增加訓練資料量。資料增強還能使網路對影像資料中的失真具有不變性，所以我使圖片沿著 x 軸進行隨機反射，在 [-90,90] 度範圍內進行隨機旋轉，並在 [1,2] 範圍內進行隨機縮放。
-<img width="865" height="469" alt="image" src="https://github.com/user-attachments/assets/06a9c96f-e78f-4332-aec6-73e12d489361" />
+<img width="865" height="436" alt="image" src="https://github.com/user-attachments/assets/a0935fbc-24f6-4185-8f7d-51ccd2eb17e9" />
 
 ### 數據視覺化
 這70%是用來訓練的資料
