@@ -38,7 +38,7 @@
 <details><summary>展開圖片</summary><img width="865" height="366" alt="image" src="https://github.com/user-attachments/assets/c6297c8a-fb0b-40ee-9ae4-02f18efcbdd6" /></details>
 
 ### 格式轉換
-用Xnview的批次轉換將圖片轉成MatLab可以使用的jpg檔案，並裁切成可使用的大小
+用 $\color{red}{\text{Xnview}}$ 的批次轉換將圖片轉成MatLab可以使用的 $\color{red}{\text{jpg}}$ 檔案，並裁切成可使用的大小
 <details><summary>展開圖片</summary><img width="865" height="485" alt="image" src="https://github.com/user-attachments/assets/0f64c9e4-5349-45da-9c14-d0ad9b2bc853" /></details>
 
 ### 資料重新命名
@@ -48,14 +48,14 @@
 
 # 三、建立模型挖掘資料：
 ### 導入數據
-透過對資料進行隨機增強，可以有效增加訓練資料量。資料增強還能使網路對影像資料中的失真具有不變性，所以我使圖片沿著 x 軸進行隨機反射，在 [-90,90] 度範圍內進行隨機旋轉，並在 [1,2] 範圍內進行隨機縮放。
+透過對資料進行隨機增強，可以有效增加訓練資料量。資料增強還能使網路對影像資料中的失真具有不變性，所以我使圖片沿著  $\color{red}{\text{x}}$  軸進行隨機反射，在  $\color{red}{\text{[-90,90]}}$  度範圍內進行隨機旋轉，並在  $\color{red}{\text{[1,2]}}$  範圍內進行隨機縮放。
 <details><summary>展開圖片</summary><img width="865" height="436" alt="image" src="https://github.com/user-attachments/assets/a0935fbc-24f6-4185-8f7d-51ccd2eb17e9" /></details>
 
 ### 數據視覺化
-這70%是用來訓練的資料
+這 $\color{red}{\text{70%}}$ 是用來訓練的資料
 <details><summary>展開圖片</summary><img width="865" height="465" alt="image" src="https://github.com/user-attachments/assets/f2d5c250-33c5-442d-8138-275f05f9c729" /></details>
 
-這30%是用來測試的資料
+這 $\color{red}{\text{30%}}$ 是用來測試的資料
 <details><summary>展開圖片</summary><img width="865" height="464" alt="image" src="https://github.com/user-attachments/assets/e836f707-8352-496c-9ab9-fa9735185de4" /></details>
 
 ## GoogLeNet
@@ -64,7 +64,7 @@
 <details><summary>展開圖片</summary><img width="865" height="428" alt="image" src="https://github.com/user-attachments/assets/6264b24f-11a8-4647-82b8-c68dd46b8d4d" /></details>
 
 ### 取代最後一個可學習層
-將 NumFilters變更為新資料中的類別數量4。 調整學習率，使新層的學習速度比遷移層的學習速度更快，將 WeightLearnRateFactor 和 設定BiasLearnRateFactor 為 10。
+將  $\color{red}{\text{NumFilters}}$ 變更為新資料中的類別數量 $\color{red}{\text{4}}$ 。 調整學習率，使新層的學習速度比遷移層的學習速度更快，將  $\color{red}{\text{WeightLearnRateFactor}}$  和  $\color{red}{\text{BiasLearnRateFactor}}$ 設定 為  $\color{red}{\text{10}}$ 。
 <details><summary>展開圖片</summary><img width="865" height="430" alt="image" src="https://github.com/user-attachments/assets/a7b2d61d-e4cb-4611-8661-62a8ac19e744" /></details>
 
 ### 替換輸出層
@@ -74,7 +74,7 @@
 ### 檢查網路
 檢查網路是否已準備好進行訓練
 訓練網路
-將 InitialLearnRate設定 為 0.0001，  ValidationFrequency設定為4，  MaxEpochs 設定為 8。由於有 168個觀測值，將 MiniBatchSize設為  42以便均勻分配訓練數據
+將  $\color{red}{\text{InitialLearnRate}}$ 設定 為  $\color{red}{\text{0.0001}}$ ，   $\color{red}{\text{ValidationFrequency}}$ 設定為 $\color{red}{\text{4}}$ ，   $\color{red}{\text{MaxEpochs}}$  設定為  $\color{red}{\text{8}}$ 。由於有  $\color{red}{\text{168}}$ 個觀測值，將  $\color{red}{\text{MiniBatchSize}}$ 設為  $\color{red}{\text{42}}$  以便均勻分配訓練數據
 <details><summary>展開圖片</summary><img width="865" height="517" alt="image" src="https://github.com/user-attachments/assets/87814ebd-7655-40b4-a56c-67beecd91cf9" /></details>
 
 深度網路設計器可讓您視覺化和監控訓練進度
@@ -87,7 +87,7 @@
 <details><summary>展開圖片</summary><img width="865" height="563" alt="image" src="https://github.com/user-attachments/assets/000979c0-e153-4da9-8d0e-3fa8a05d8fe9" /></details>
 
 ### 取代最後一個可學習層
-將 NumFilters變更為新資料中的類別數量4。 調整學習率，使新層的學習速度比遷移層的學習速度更快，將 WeightLearnRateFactor 和 設定BiasLearnRateFactor 為 10。
+將  $\color{red}{\text{NumFilters}}$ 變更為新資料中的類別數量 $\color{red}{\text{4}}$ 。 調整學習率，使新層的學習速度比遷移層的學習速度更快，將  $\color{red}{\text{WeightLearnRateFactor}}$  和設定 $\color{red}{\text{BiasLearnRateFactor}}$  為  $\color{red}{\text{10}}$ 。
 <details><summary>展開圖片</summary><img width="865" height="447" alt="image" src="https://github.com/user-attachments/assets/1b01170a-a476-423a-a685-45c5ea82bc15" /></details>
 
 ### 替換輸出層
@@ -99,7 +99,7 @@
 <details><summary>展開圖片</summary><img width="865" height="512" alt="image" src="https://github.com/user-attachments/assets/337a905b-73f7-457c-8d42-77794aaa5e54" /></details>
 
 ### 訓練網路
-將 InitialLearnRate設定 為 0.0001，  ValidationFrequency設定為4，  MaxEpochs 設定為 8。由於有 168個觀測值，將 MiniBatchSize設為  42以便均勻分配訓練數據
+將  $\color{red}{\text{InitialLearnRate}}$ 設定 為  $\color{red}{\text{0.0001}}$ ，  $\color{red}{\text{ValidationFrequency}}$ 設定為 $\color{red}{\text{4}}$ ，   $\color{red}{\text{MaxEpochs}}$  設定為  $\color{red}{\text{8}}$ 。由於有  $\color{red}{\text{168}}$ 個觀測值，將  $\color{red}{\text{MiniBatchSize}}$ 設為   $\color{red}{\text{42}}$ 以便均勻分配訓練數據
 
 <details><summary>展開圖片</summary><img width="568" height="633" alt="image" src="https://github.com/user-attachments/assets/23ba4fc1-245e-429b-949c-4379f0e29634" /></details>
 
@@ -109,9 +109,9 @@
 # 四、實驗結果
 |GoogLeNet| SqueezeNet|
 | :--- | :--- |
-|<details><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/cec14697-bd8a-467d-86b6-0607e106b2e9" /></details>|<details><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/fa08a0b7-29fb-4aed-bd74-5309632f838d" /></details>|
-|<details><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ad46719e-a95f-4890-a780-5c78ba0f7163" /></details>|<details><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/79fc44e2-8541-4c06-b0a1-ba5897933b5b" /></details>|
-|<details><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/4543a159-7a56-48d1-9542-f032232f9932" /></details>|<details><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/6147e002-af11-46b2-80a6-cb9a3a6e6b38" /></details>|
+|<details open><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/cec14697-bd8a-467d-86b6-0607e106b2e9" /></details>|<details open><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/fa08a0b7-29fb-4aed-bd74-5309632f838d" /></details>|
+|<details open><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ad46719e-a95f-4890-a780-5c78ba0f7163" /></details>|<details open><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/79fc44e2-8541-4c06-b0a1-ba5897933b5b" /></details>|
+|<details open><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/4543a159-7a56-48d1-9542-f032232f9932" /></details>|<details open><summary>展開圖片</summary><img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/6147e002-af11-46b2-80a6-cb9a3a6e6b38" /></details>|
 
 # 五、實驗結果討論
  找圖片時，要找的物品要偏向圖片中間，不然圖片剪切過後物品會變的不完整 ，無法在訓練中使用。
